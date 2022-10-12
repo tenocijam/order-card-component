@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    height: max-content;
+    margin: 4% 4%;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 8% 0 6% 0;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.summary {
+    margin: 0 9%;
+    color: var(--desaturated-blue)
+}
+
+.plan-wrapper {
+    display: flex;
+    background-color: var(--very-pale-blue);
+    padding: 4%;
+    width: 80%;
+    margin: 5% auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.pricing-wrapper {
+    padding-left: 18px;
+}
+
+.annual-plan-text {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.year-text {
+    color: var(--desaturated-blue);
+}
+
+.change-text {
+    margin-left: auto;
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.change-text:hover {
+    color: #766cf1;
+}
+
+button {
+    width: 80%;
+    background-color: var(--bright-blue);
+    padding: 4% 10%;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #766cf1;
+}
+
+.cancel-order-text {
+    margin: 6% auto 10% auto;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.cancel-order-text:hover {
+    color: var(--dark-blue);    
+}
+
+/* Footer */
+.attribution {
+    font-size: 14px;
+    text-align: center;
+
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: var(--bright-blue);
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
